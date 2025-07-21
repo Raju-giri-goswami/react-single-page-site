@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="flex justify-center md:justify-start items-center">
           <img
-            src="/images/logo_black 1.png"
+            src="/images/logo_black-1.png"
             alt="Company Logo"
             className="max-h-10"
           />
