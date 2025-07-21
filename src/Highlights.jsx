@@ -3,51 +3,97 @@ import React from "react";
 const Highlights = () => {
   const highlights = [
     {
-      icon: "images/Edit-Square.png",
-      title: "Assignments & Module Tests",
+      icon: "images/course-img-1.jpg",
+      title: "Assignments & Modules tests",
       description: "Test your knowledge",
     },
     {
-      icon: "images/Edit-Square.png",
+      icon: "images/course-img-2.jpg",
       title: "Industry-recognized Certification",
       description: "Stand out to your professional",
     },
     {
-      icon: "images/Edit-Square.png",
-      title: "Live Classes & Recorded Lectures",
+      icon: "images/course-img-5.jpg",
+      title: "Live classes & recorded lectures",
       description: "Best of both worlds of learning",
     },
     {
-      icon: "images/Edit-Square.png",
+      icon: "images/course-img-4.jpg",
       title: "Downloadable Content",
       description: "With lifetime access",
     },
     {
-      icon: "images/Edit-Square.png",
-      title: "6 Industry-level Projects",
+      icon: "images/course-img-3.jpg",
+      title: "6 Industry level projects",
       description: "Get practical skills",
     },
     {
-      icon: "images/Edit-Square.png",
-      title: "4 Live Doubt-clearing Sessions",
+      icon: "images/course-img-6.jpg",
+      title: "4 Live Doubt clearing Session",
       description: "Gain a clear understanding",
     },
   ];
 
   return (
-    <section className="bg-gray-100 py-8 px-20">
-      <div className="container mx-auto">
-        <h2 className="text-center text-2xl font-bold mb-6">Key Highlights of the Course</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {highlights.map((item, index) => (
-            <div key={index} className="bg-white shadow-lg p-6 rounded-lg flex items-center">
-              <img src={item.icon} alt={item.title} className="w-12 h-12 mr-4" />
-              <div>
-                <h3 className="text-lg font-bold">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.description}</p>
+    <section className="high bg-[#F7FAFF] mt-[70px] py-[50px]">
+      <div className="container xl:max-w-[1320px] mx-auto">
+        <div className="text-hight sm:text-[36px] xs:text-[23px] font-bold">
+          Key Highlights of the Course
+        </div>
+        <p className="text-high sm:text-[18px] xs:text-[14px] pt-3">
+          Lorem ipsum dolor sit amet consectetur. Imperdiet tellus ut ornare
+          pharetra leo vestibulum at orci.
+        </p>
+        <div className="flex gap-[30px] md:flex-row flex-col pt-8">
+          {highlights.slice(0, 3).map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md overflow-hidden p-5"
+            >
+              <div className="grow xs:mx-auto flex items-center gap-[15px]">
+                <img
+                  className="sm:w-[86px] sm:h-[86px] xs:w-[50px] xs:h-[50px]"
+                  src={item.icon}
+                  alt={item.title}
+                />
+                <div className="text-high sm:text-[20px] xs:text-[14px] font-medium">
+                  {item.title}
+                  <p className="text-txt text-[15px] font-normal">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="flex gap-[30px] md:flex-row flex-col grid md:grid-flow-col justify-stretch py-8">
+          {highlights.slice(3).map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md overflow-hidden p-5"
+            >
+              <div className="grow xs:mx-auto flex items-center gap-[15px]">
+                <img
+                  className="sm:w-[86px] sm:h-[86px] xs:w-[50px] xs:h-[50px]"
+                  src={item.icon}
+                  alt={item.title}
+                />
+                <div className="text-high sm:text-[20px] xs:text-[14px] font-medium">
+                  {item.title}
+                  <p className="text-txt text-[15px] font-normal">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        <div className="flex gap-[30px] py[30px] pt-5 justify-center">
+          <button className="bg-gradient-to-r from-[#0ACEFE] to-[#2699FB] text-white sm:p-[15px_50px] xs:p-[12px_50px] rounded-md sm:text-[20px] xs:text-[15px] font-medium drop-shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+            Book Free Class
+          </button>
         </div>
       </div>
     </section>

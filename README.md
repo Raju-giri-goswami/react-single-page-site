@@ -1,8 +1,5 @@
 ![react-single-page-site](https://github.com/user-attachments/assets/c8cd5f3b-6b6b-4676-aca0-6036ec39e854)
 
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
